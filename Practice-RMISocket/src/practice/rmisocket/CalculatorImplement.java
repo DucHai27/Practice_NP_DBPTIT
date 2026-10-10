@@ -9,15 +9,15 @@ import java.rmi.server.UnicastRemoteObject;
  *
  * @author Admin
  */
-class CalculatorImplement extends UnicastRemoteObject implements Calculator {
+public class CalculatorImplement extends UnicastRemoteObject implements Calculator{
     
-    public CalculatorImplement() throws RemoteException {
+    public CalculatorImplement() throws Exception {
         super();
     }
     
     @Override
-    public int add(int x, int y) {
-        System.out.println("rmi client request");
-        return x + y;
+    public int add(int x, int y) throws Exception {
+        System.out.println("a new rmi client request");
+        return x+y;
     }
 }

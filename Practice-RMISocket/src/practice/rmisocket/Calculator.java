@@ -8,7 +8,6 @@ import java.rmi.*;
  *
  * @author Admin
  */
-
 public interface Calculator extends Remote {
-    public int add(int x, int y) throws RemoteException;
+    public int add(int x, int y) throws Exception;
 }
